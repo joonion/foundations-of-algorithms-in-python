@@ -1,5 +1,4 @@
-def insertionsort(S):
-    n = len(S)
+def insertionsort(n, S):
     for i in range(1, n):
         x = S[i]
         j = i - 1
@@ -10,6 +9,6 @@ def insertionsort(S):
 
 from random import sample
 S = sample(range(10, 100), 10)
-insertionsort(S)
+insertionsort(len(S), S)
 print(S)
 print(sorted(S))

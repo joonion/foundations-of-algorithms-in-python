@@ -1,5 +1,4 @@
-def selectionsort(S):
-    n = len(S)
+def selectionsort(n, S):
     for i in range(n - 1):
         smallest = i
         for j in range(i + 1, n):
@@ -9,6 +8,6 @@ def selectionsort(S):
 
 from random import sample
 S = sample(range(10, 100), 10)
-selectionsort(S)
+selectionsort(len(S), S)
 print(S)
 print(sorted(S))
